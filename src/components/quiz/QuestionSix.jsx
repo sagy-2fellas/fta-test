@@ -141,7 +141,7 @@ const QuestionSix = () => {
         onClick={() => {
           setToggleCart(!toggleCart);
         }}
-        className="shopping-cart w-12 h-12 xs:w-16 xs:h-16 shadow-lg rounded bg-white absolute right-4 bottom-4 sm:bottom-10 sm:right-10 z-40 "
+        className="shopping-cart w-14 h-14 xs:w-16 xs:h-16 min-w-[56px] min-h-[56px] shadow-lg rounded bg-white absolute right-4 bottom-4 sm:bottom-10 sm:right-10 z-40 cursor-pointer"
       >
         <div className="flex items-center justify-center relative w-full h-full">
           <div className="bg-ft-blue  rounded-full h-8 w-8 flex items-center justify-center  absolute top-[-36%] left-[-36%]">
@@ -234,14 +234,19 @@ const QuestionSix = () => {
             ""
           ) : (
             <form
-              className="flex flex-col space-y-2 mt-6"
+              className="flex flex-col space-y-4 mt-6"
               onSubmit={submitRefined}
             >
               {shopArray.map((x, i) => {
                 return (
-                  <label key={`${x}--${i}`}>
-                    <input name={x} type="checkbox" onChange={handleChange} />
-                    <span className="ml-2 text-sm lg:text-base">
+                  <label key={`${x}--${i}`} className="flex items-center cursor-pointer py-2 min-h-[44px]">
+                    <input
+                      name={x}
+                      type="checkbox"
+                      onChange={handleChange}
+                      className="w-5 h-5 min-w-[20px] min-h-[20px] cursor-pointer"
+                    />
+                    <span className="ml-3 text-sm lg:text-base flex-1">
                       Some of my <span className="lowercase">{x}</span>{" "}
                       {x === "Coffee Beans" ? "have" : "has"} this label
                     </span>
