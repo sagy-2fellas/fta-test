@@ -12,6 +12,7 @@ module.exports = {
         "ft-bg": "#f2f2f2",
       },
       screens: {
+        xxs: "360px",
         xs: "375px",
         ss: "620px",
         sm: "768px",
