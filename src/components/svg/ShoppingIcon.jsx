@@ -30,7 +30,7 @@ function ShoppingIcon({
       height="100%"
       fill="none"
       viewBox="0 0 1134 763"
-      className="h-[250px] w-[250px] xs:h-[300px] xs:w-[350px] sm:!h-[450px] sm:!w-[550px] md2:w-[650px] md2:h-[500px] lg:!h-[550px] lg:!w-[750px] 2xl:!w-[900px] 2xl:!h-[700px]"
+      className="h-[250px] w-[250px] xs:h-[300px] xs:w-[350px] sm:!h-[450px] sm:!w-[550px] md2:w-[650px] md2:h-[500px] lg:!h-[550px] lg:!w-[750px] 2xl:!w-[900px] 2xl:!h-[700px] relative z-0"
     >
       <g id="shopping 1" clipPath="url(#clip0_7_963)">
         <g id="Layer 1">
