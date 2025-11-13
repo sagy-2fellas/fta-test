@@ -274,8 +274,8 @@ const QuestionSix = () => {
       {/*END NAVIGATION */}
 
       {/* DESKTOP VERSION */}
-      <div className="flex flex-col md:flex-row w-full md:min-h-[600px] md:max-h-[90vh] sm:h-[95vh] justify-start md:justify-between gap-4 sm:gap-0 md:overflow-y-auto overflow-visible">
-        <div className=" flex flex-col md:flex-row items-center justify-start md:h-full flex-initial md:w-1/5 pt-6 sm:pt-10 md:pt-20">
+      <div className="flex flex-col md:flex-row w-full h-[90vh] sm:h-[95vh] justify-between ">
+        <div className=" flex flex-col md:flex-row items-center justify-start h-full flex-initial md:w-1/5 pt-24 md:pt-20">
           <h2 className="font-alegreya 2xl:text-7xl lg:text-5xl sm:text-6xl  md:text-4xl text-3xl xs:text-4xl  verticle-text ">
             Let's do a quick shop!
           </h2>
@@ -283,13 +283,13 @@ const QuestionSix = () => {
             Choose your favourites.
           </p>
         </div>
-        <div className="flex-none flex items-center justify-center w-full md:flex-1 md:flex-initial min-h-[300px]">
+        <div>
           {" "}
           <motion.div
             initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, type: "spring", delay: 0.5 }}
-            className="flex items-center justify-center w-full pb-4 sm:pb-10 lg:pb-0"
+            className="flex items-end justify-center w-full h-full pb-28 lg:pb-0"
           >
             <ShoppingIcon
               selectProduct={selectProduct}
@@ -314,6 +314,7 @@ const QuestionSix = () => {
             />
           </motion.div>
         </div>
+        <div className="flex-initial w-1/5"></div>
       </div>
 
       {/*END DESKTOP VERSION */}
