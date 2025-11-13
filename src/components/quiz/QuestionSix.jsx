@@ -213,8 +213,8 @@ const QuestionSix = () => {
         <div
           className={
             refineToggled === false
-              ? "bg-white rounded-lg shadow-lg  right-1/2 translate-x-1/2 top-1/2 -translate-y-1/2 w-[90%] sm:w-[600px] md:sm:w-[700px] p-2 xs:p-10 md:p-6 z-50 absolute pointer-events-none opacity-0 transition-all duration-100 mt-6 xs:mt-0"
-              : "bg-white rounded-lg shadow-lg  right-1/2 translate-x-1/2 top-1/2 -translate-y-1/2 w-[90%]  sm:w-[600px] md:sm:w-[700px] p-2 xs:p-10 md:p-6  z-50 absolute pointer-events-auto opacity-100 transition-all duration-1000 mt-6 xs:mt-0"
+              ? "bg-white rounded-lg shadow-lg  right-1/2 translate-x-1/2 top-1/2 -translate-y-1/2 w-[90%] sm:w-[600px] md:sm:w-[700px] max-h-[80vh] overflow-y-auto p-2 xs:p-10 md:p-6 z-50 absolute pointer-events-none opacity-0 transition-all duration-100 mt-6 xs:mt-0"
+              : "bg-white rounded-lg shadow-lg  right-1/2 translate-x-1/2 top-1/2 -translate-y-1/2 w-[90%]  sm:w-[600px] md:sm:w-[700px] max-h-[80vh] overflow-y-auto p-2 xs:p-10 md:p-6  z-50 absolute pointer-events-auto opacity-100 transition-all duration-1000 mt-6 xs:mt-0"
           }
         >
           <h3 className="font-alegreya text-3xl text-black z-50">
