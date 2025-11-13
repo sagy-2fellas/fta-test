@@ -30,7 +30,7 @@ function ShoppingIcon({
       height="100%"
       fill="none"
       viewBox="0 0 1134 763"
-      className="h-[250px] w-[250px] xs:h-[300px] xs:w-[350px] sm:!h-[450px] sm:!w-[550px] md2:w-[650px] md2:h-[500px] lg:!h-[550px] lg:!w-[750px] 2xl:!w-[900px] 2xl:!h-[700px] relative z-0"
+      className="h-[250px] w-[250px] xs:h-[300px] xs:w-[350px] sm:!h-[450px] sm:!w-[550px] md2:w-[650px] md2:h-[500px] lg:!h-[550px] lg:!w-[750px] 2xl:!w-[900px] 2xl:!h-[700px] relative z-0 pointer-events-none"
     >
       <g id="shopping 1" clipPath="url(#clip0_7_963)">
         <g id="Layer 1">
@@ -2069,7 +2069,7 @@ function ShoppingIcon({
           <g
             id="white-wine"
             className={
-              isWhite ? "select-product" : "opacity-100 cursor-pointer"
+              isWhite ? "select-product pointer-events-auto" : "opacity-100 cursor-pointer pointer-events-auto"
             }
             onClick={() => {
               selectProduct("White Wine");
@@ -2260,7 +2260,7 @@ function ShoppingIcon({
           <g
             id="black-tea"
             className={
-              isBlack ? "select-product" : "opacity-100 cursor-pointer"
+              isBlack ? "select-product pointer-events-auto" : "opacity-100 cursor-pointer pointer-events-auto"
             }
             onClick={() => {
               selectProduct("Black Tea");
@@ -2413,7 +2413,7 @@ function ShoppingIcon({
           <g
             id="rooibos-tea"
             className={
-              isRooibos ? "select-product" : "opacity-100 cursor-pointer"
+              isRooibos ? "select-product pointer-events-auto" : "opacity-100 cursor-pointer pointer-events-auto"
             }
             onClick={() => {
               selectProduct("Rooibos Tea");
@@ -2582,7 +2582,7 @@ function ShoppingIcon({
           <g
             id="herbal-tea"
             className={
-              isHerbal ? "select-product" : "opacity-100 cursor-pointer"
+              isHerbal ? "select-product pointer-events-auto" : "opacity-100 cursor-pointer pointer-events-auto"
             }
             onClick={() => {
               selectProduct("Herbal Tea");
@@ -2743,7 +2743,7 @@ function ShoppingIcon({
           <g
             id="ground-coffee"
             className={
-              isGround ? "select-product" : "opacity-100 cursor-pointer"
+              isGround ? "select-product pointer-events-auto" : "opacity-100 cursor-pointer pointer-events-auto"
             }
             onClick={() => {
               selectProduct("Ground Coffee");
@@ -2904,7 +2904,7 @@ function ShoppingIcon({
           <g
             id="coffee-beans"
             className={
-              isBeans ? "select-product" : "opacity-100 cursor-pointer"
+              isBeans ? "select-product pointer-events-auto" : "opacity-100 cursor-pointer pointer-events-auto"
             }
             onClick={() => {
               selectProduct("Coffee Beans");
@@ -3060,7 +3060,7 @@ function ShoppingIcon({
           </g>
           <g
             id="red-wine"
-            className={isRed ? "select-product" : "opacity-100 cursor-pointer"}
+            className={isRed ? "select-product pointer-events-auto" : "opacity-100 cursor-pointer pointer-events-auto"}
             onClick={() => {
               selectProduct("Red Wine");
               setHandProduct("RedWine");
@@ -3229,7 +3229,7 @@ function ShoppingIcon({
           </g>
           <g
             id="rose"
-            className={isRose ? "select-product" : "opacity-100 cursor-pointer"}
+            className={isRose ? "select-product pointer-events-auto" : "opacity-100 cursor-pointer pointer-events-auto"}
             onClick={() => {
               selectProduct("Rosé");
               setHandProduct("Rose");
