@@ -40,7 +40,7 @@ const QuestionSix = () => {
   };
 
   const dispatch = useDispatch();
-  let allowNext = "42";
+  let allowNext = shopArray.length > 0 ? "enabled" : "";
 
   const selectProduct = (product) => {
     updateShopArray((arr) => [...arr, `${product}`]);
