@@ -287,7 +287,7 @@ const QuestionSix = () => {
           {" "}
           <motion.div
             initial={{ opacity: 0, x: -300 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, type: "spring", delay: 0.5 }}
             className="flex items-end justify-center w-full h-full pb-28 lg:pb-0"
           >
